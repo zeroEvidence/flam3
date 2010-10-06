@@ -1,6 +1,6 @@
 #summary A summary of the new features available in flam3 3.0
 
-The last major release of flam3 was in 2006, and since there has been a lot of development behind the scenes of flam3 features and improvements.  Here's a summary of what has been added over the last few years.
+The last major release of flam3 was in 2006, and since there has been a lot of development behind the scenes of features and improvements.  Here's a summary of what has been added over the last few years.
 
 
 == Highlight Power ==
