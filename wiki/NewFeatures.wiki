@@ -44,7 +44,7 @@ Enabling early clip mode is done on the command-line, by setting the env var 'ea
 
 ----
 
-== Symmetry -> Animate & Color_Speed =
+== Symmetry -> Animate & Color_Speed ==
 
 Up until flam3 3.0, the symmetry value of an xform was used to control the amount of color the most recent iteration contributed to the aggregate color.  Negative values of symmetry would also prevent rotation of an xform during sheep animations.  This limitation made many sheep very hard to color - so in 3.0, we have split symmetry into two new attributes, animate and color_speed.  Setting animate > 0 indicates that an xform should rotate during sheep animations; animate = 0 prevents it from rotating.  Color_speed is a much more intuitive value to use for specifying how much that xform's color coordinate blends into the aggregate...color_speed = 0 means that the new color will be the old color exactly, no effect.  color_speed = 1 means that the new color is the color of the xform, with no blending with the old color.  color_speed = 0.5 means average them together.  
 
