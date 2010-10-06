@@ -18,3 +18,23 @@ Yuk.  Notice that the vivid red color is now trending towards white for the enti
 http://dl.dropbox.com/u/108435/flam3_wiki/2229.hl04.png
 
 Much better.  Note that setting highlight_power to 0 will prevent any saturated areas from trending towards white, essentially capping saturated areas to a color with saturation 255 in the HSV colorspace.
+
+The highlight_power setting can be edited manually, or experimented with using the fractal fr0st flame editor on the Adjust tab.
+
+== Early Clip Mode ==
+
+In the flam3 2.7 code, when applying the spatial filter to the supersampled image, the values in the supersampled image are in log-scaled units, and can be very small or very large.  Applying a filter kernel to log density data before converting it to RGB can have some potential problems, as the following image shows:
+
+http://dl.dropbox.com/u/108435/flam3_wiki/23652_ec_off.png
+
+See the jaggies on the bright spokes on the left side of the image?  The spokes are very dense, and so applying the spatial filter to the log density data blurs the spokes, but the blurred areas are also bright enough to saturate, and we are left with a wider, but not smoother, swath of iterations.  However, if we clip the color information prior to the spatial filter application, we get a very different image.  This is, in essence, rendering the image very large with no supersampling, and resizing in an external program like Photoshop or Irfanview.
+
+http://dl.dropbox.com/u/108435/flam3_wiki/23652_ec_on.png
+
+The lines are much smoother - but they're dimmer, too.  You can't easily have it both ways.  That said, look at the results when the image is rendered with both early clip mode AND highlight_power = 1.5 :
+
+http://dl.dropbox.com/u/108435/flam3_wiki/23652_ec_hl.png
+
+This is a much more acceptable image, at least to me.  The cyan saturation has gone away, revealing more detail & structure.
+
+Enabling early clip mode is done on the command-line, by setting the env var 'earlyclip' to 1.  There is also a checkbox in fr0st that allows the use of early clip mode in the render dialog.
