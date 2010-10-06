@@ -1,0 +1,20 @@
+#summary A summary of the new features available in flam3 3.0
+
+The last major release of flam3 was in 2006, and since there has been a lot of development behind the scenes of flam3 features and improvements.  Here's a summary of what has been added over the last few years.
+
+
+== Highlight Power ==
+
+A long-standing bug in the way that the output color is calculated has been fixed, and a new render tweak setting is now available to adjust the behavior of flam3.  Here's a picture of the problem:
+
+http://dl.dropbox.com/u/108435/flam3_wiki/2229.hlm1.png
+
+See that bright yellow spot at the top of the rounded shape?  That color actually isn't in the palette.  It's a result of clipping each color coordinate separately in regions of high iteration density.  This is why, for a long time, RGBCMY colors have tended to dominate high-density areas of flame renders.  The solution is to keep the color vector pointing the same direction until it begins to saturate, and then trend the color towards white as the number of iterations continues to increase. The attribute 'highlight_power' in a genome's flame element controls how fast the color converges to white.  highlight_power interpolates just like other parameters in the flame, and defaults to -1, which is the old 2.7 behaviour.  Changing the highlight_power to 1.0 results in the following image:
+
+http://dl.dropbox.com/u/108435/flam3_wiki/2229.hl10.png
+
+Yuk.  Notice that the vivid red color is now trending towards white for the entire shape, resulting in a pink hue.  Let's drop the highlight_power to 0.4.
+
+http://dl.dropbox.com/u/108435/flam3_wiki/2229.hl04.png
+
+Much better.  Note that setting highlight_power to 0 will prevent any saturated areas from trending towards white, essentially capping saturated areas to a color with saturation 255 in the HSV colorspace.
