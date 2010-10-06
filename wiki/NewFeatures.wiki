@@ -2,6 +2,7 @@
 
 The last major release of flam3 was in 2006, and since there has been a lot of development behind the scenes of features and improvements.  Here's a summary of what has been added over the last few years.
 
+----
 
 == Highlight Power ==
 
@@ -21,6 +22,8 @@ Much better.  Note that setting highlight_power to 0 will prevent any saturated 
 
 The highlight_power setting can be edited manually, or experimented with using the fractal fr0st flame editor on the Adjust tab.
 
+----
+
 == Early Clip Mode ==
 
 In the flam3 2.7 code, when applying the spatial filter to the supersampled image, the values in the supersampled image are in log-scaled units, and can be very small or very large.  Applying a filter kernel to log density data before converting it to RGB can have some potential problems, as the following image shows:
@@ -38,3 +41,35 @@ http://dl.dropbox.com/u/108435/flam3_wiki/23652_ec_hl.png
 This is a much more acceptable image, at least to me.  The cyan saturation has gone away, revealing more detail & structure.
 
 Enabling early clip mode is done on the command-line, by setting the env var 'earlyclip' to 1.  There is also a checkbox in fr0st that allows the use of early clip mode in the render dialog.
+
+----
+
+== Symmetry -> Animate & Color_Speed =
+
+Up until flam3 3.0, the symmetry value of an xform was used to control the amount of color the most recent iteration contributed to the aggregate color.  Negative values of symmetry would also prevent rotation of an xform during sheep animations.  This limitation made many sheep very hard to color - so in 3.0, we have split symmetry into two new attributes, animate and color_speed.  Setting animate > 0 indicates that an xform should rotate during sheep animations; animate = 0 prevents it from rotating.  Color_speed is a much more intuitive value to use for specifying how much that xform's color coordinate blends into the aggregate...color_speed = 0 means that the new color will be the old color exactly, no effect.  color_speed = 1 means that the new color is the color of the xform, with no blending with the old color.  color_speed = 0.5 means average them together.  
+
+Note that flames using symmetry can be read by flam3 3.0, and will be converted to equivalent animate and color_speed settings internally.  You may not be able to convert back to 2.7, however, depending on your animate setting.  There is an animate checkbox in fr0st, as well as a slider for color_speed.
+
+----
+
+== Motion Elements ==
+
+There is a new concept in 3.0, that of motion elements.  Motion elements are sub-elements of xforms that can periodically vary most of the parameters associated with an xform during sheep animation.  For example, one could specify that the weight of the spherical variation should vary from 2 to 4, sinusoidally, 3 times during a sheep loop.  This is a very powerful feature that has yet to be explored, and will be covered in detail on a different page.
+
+----
+
+== Variations ==
+
+There are now 98 variations supported by flam3!  See the complete list in the README file.  Most of the official plugin pack for Apophysis is now supported, as well as others that were requested (or easy.)
+
+----
+
+== Stagger Mode ==
+
+Ever want to do a sheep-like edge, but have the xforms interpolate one at a time instead of all at once?  Setting the env var 'stagger' allows this behavior.  For example, stagger=0 means that xforms will interpolate all at once (the default.)  stagger = 0.5 means that the interpolation of each xform is staggered so that when the first xform is half done, the second one starts, and so on.  stagger = 1.0 means that each xform interpolates consecutively with no overlap.
+
+----
+
+== Apophysis Chaos supported ==
+
+Apophysis-like chaos and plotmode have been implemented, with some very slight differences.  Plotmode has been promoted to 'opacity' so that it can be interpolated, and chaos can also be interpolated.
