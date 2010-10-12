@@ -4,6 +4,10 @@ The last major release of flam3 was in 2006, and since there has been a lot of d
 
 ----
 
+== Speed ==
+
+All the code as been optimized, giving you results about 30% faster.
+
 == Highlight Power ==
 
 A long-standing bug in the way that the output color is calculated has been fixed, and a new render tweak setting is now available to adjust the behavior of flam3.  Here's a picture of the problem:
