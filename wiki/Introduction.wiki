@@ -1,0 +1,5 @@
+Welcome to the FLAM3 wiki.  This is the place for documentation on the command-line tools, XML file format, and C language API.
+
+Related places include our home page on the web: FLAM3.com, ElectricSheep.org, and the Apophysis wiki at http://apophysis.wikispaces.com.
+
+
