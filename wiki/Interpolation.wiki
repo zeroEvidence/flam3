@@ -21,14 +21,13 @@ While the interpolation attribute changes what could be thought of as the path o
 
 ===Special Sauce=== 
 
-<span style="border-collapse: collapse; font-family: arial,sans-serif; line-height: normal;"> The following "shortcuts" or improvements are made in interpolation, collectively they are called "special sauce":</span>
-<span style="border-collapse: collapse; font-family: arial,sans-serif; line-height: normal;"> </span>
-<span style="border-collapse: collapse; font-family: arial,sans-serif; line-height: normal;"> First:</span>
-<span style="border-collapse: collapse; font-family: arial,sans-serif; line-height: normal;"> For log interpolation only, when padding an xform that uses spherical, ngon, julian, juliascope, polar, wedge_sph or wedge_julia, instead of a standard rest position (linear=1, 1 0 0 1 0 0), use a special one (linear=-1, -1 0 0 -1 0 0).</span>
-<span style="border-collapse: collapse; font-family: arial,sans-serif; line-height: normal;"> </span>
-<span style="border-collapse: collapse; font-family: arial,sans-serif; line-height: normal;"> Next, try:</span>
-<span style="border-collapse: collapse; font-family: arial,sans-serif; line-height: normal;"> For xforms using rect, rings2, fan2, blob, supershape, curl, or perspective, pad with an identity using that variation (or those variations) with rest position for the coefs (1 0 0 1 0 0) but the parameters are set to make it look like linear=1 (curl with c1=0 and c2=0, for example).</span>
-<span style="border-collapse: collapse; font-family: arial,sans-serif; line-height: normal;"> </span>
-<span style="border-collapse: collapse; font-family: arial,sans-serif; line-height: normal;"> Finally:</span>
-<span style="border-collapse: collapse; font-family: arial,sans-serif; line-height: normal;"> If an xform has fan or rings, then use those in the output (the rest position for those variations results in no effect.)</span>
-<span style="border-collapse: collapse; font-family: arial,sans-serif; line-height: normal;"> </span>
+The following "shortcuts" or improvements are made in interpolation, collectively they are called "special sauce":
+
+First:
+For log interpolation only, when padding an xform that uses spherical, ngon, julian, juliascope, polar, wedge_sph or wedge_julia, instead of a standard rest position (linear=1, 1 0 0 1 0 0), use a special one (linear=-1, -1 0 0 -1 0 0).
+
+Next, try:
+For xforms using rect, rings2, fan2, blob, supershape, curl, or perspective, pad with an identity using that variation (or those variations) with rest position for the coefs (1 0 0 1 0 0) but the parameters are set to make it look like linear=1 (curl with c1=0 and c2=0, for example).
+
+Finally:
+If an xform has fan or rings, then use those in the output (the rest position for those variations results in no effect.)
