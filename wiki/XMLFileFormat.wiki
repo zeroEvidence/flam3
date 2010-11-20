@@ -1,7 +1,8 @@
 ==XML file format==
 This documents the file format used by the standard implementation to specify individual images and animations. The XML meta-format is used to facilitate predictable parsing and compatibility. No formal DTD is available, but the important part is the semantics of the recognized elements and attributes, and those are given here.
 
-The basic template is:{{{
+The basic template is:
+{{{
 <flame> <xform/> <xform/> ... <color/> <color/> ... </flame>
 }}}
 
