@@ -1,5 +1,5 @@
 Welcome to the FLAM3 wiki.  This is the place for documentation on the command-line tools, XML file format, and C language API.
 
-If you have any questions, please ask on the forums at http://community.electricsheep.org/forum
+If you have any questions, please ask on the [http://community.electricsheep.org/forum forum].
 
 Related places include our home page on the web: [http://FLAM3.com FLAM3], [http://ElectricSheep.org ElectricSheep], and [http://fr0st.wordpress.com/ Fr0st].
