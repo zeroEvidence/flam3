@@ -13,8 +13,7 @@ Setting the parameters is explained [[Using the Command-Line Utilities|here]] .
 
 || *name* || *default* || *meaning* ||
 || in || stdin || name of input file ||
-|| out || NA || name of output file
-(use prefix if rendering more than one image) ||
+|| out || NA || name of output file (use prefix if rendering more than one image) ||
 || prefix || (empty) || prefix names of output files with this string. ||
 || nstrips || 1 || number of strips, ie render fractions of a frame at once ||
 || qs || 1 || quality scale, multiply quality of all frames by this ||
