@@ -11,7 +11,7 @@ used options near the top of the list.
 
 Setting the parameters is explained [[Using the Command-Line Utilities|here]] .
 
-|| **name** || **default** || **meaning** ||
+|| *name* || *default* || *meaning* ||
 || in || stdin || name of input file ||
 || out || NA || name of output file
 (use prefix if rendering more than one image) ||
@@ -29,10 +29,10 @@ Setting the parameters is explained [[Using the Command-Line Utilities|here]] .
 || seed || random || integer seed for random numbers, defaults to time+pid. ||
 || bits || 33 || also 16, 32, or 64: sets bit-width of internal buffers ||
 || image || filename || replace palette with png, jpg, or ppm image ||
-|| name_enable || 0 || use 'name' attr in <flame> to name image output if present ||
-|| nick || (empty) || nickname to use in <edit> tags / img comments ||
-|| url || (empty) || url to use in <edit> tags /img comments ||
-|| id || (empty) || ID to use in <edit> tags / img comments ||
+|| name_enable || 0 || use 'name' attr in {{{<flame>}}} to name image output if present ||
+|| nick || (empty) || nickname to use in {{{<edit>}}} tags / img comments ||
+|| url || (empty) || url to use in {{{<edit>}}} tags /img comments ||
+|| id || (empty) || ID to use in {{{<edit>}}} tags / img comments ||
 || use_mem || auto || floating point number of bytes of memory to use (render only) ||
 || nthreads || auto || number of threads to use ||
 || insert_palette || unset || insert the palette into the image. ||
