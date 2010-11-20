@@ -100,10 +100,10 @@ See above for how to set them.
 || sequence || NA || 360 degree rotation 'loops' times of each control point plus rotating transitions ||
 || loops || NA || number of times to rotate each control point in sequence ||
 || strip || NA || strip to render, frame and nframes control which one ||
-|| nick || (empty) || nickname to use in <edit> tags / img comments ||
-|| url || (empty) || url to use in <edit> tags /img comments ||
-|| id || (empty) || ID to use in <edit> tags / img comments ||
-|| comment || (empty) || comment string for <edit> tags ||
+|| nick || (empty) || nickname to use in {{{<edit>}}} tags / img comments ||
+|| url || (empty) || url to use in {{{<edit>}}} tags /img comments ||
+|| id || (empty) || ID to use in {{{<edit>}}} tags / img comments ||
+|| comment || (empty) || comment string for {{{<edit>}}} tags ||
 || noedits || unset || omit edit tags from output ||
-|| print_edit_depth || 0 || depth to truncate <edit> tag structure. 0 prints all <edit> tags ||
+|| print_edit_depth || 0 || depth to truncate <edit> tag structure. 0 prints all {{{<edit>}}} tags ||
 || intpalette || unset || round palette entries for importing into older Apophysis versions ||
