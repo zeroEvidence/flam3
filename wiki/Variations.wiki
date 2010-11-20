@@ -55,7 +55,8 @@ r  = 1 / (sqrt(X^2 + Y^2) + EPS);
 
 Vx = W * (X-Y) * (X+Y) * r;
 Vy = W * 2 * X * Y * r;
-}}}----
+}}}
+----
 
 **(5) Polar**
 {{{
@@ -64,7 +65,8 @@ a  = atan2(X,Y);
 
 Vx = W * a / PI;
 Vy = W * (r - 1.0);
-}}}----
+}}}
+----
 
 **(6) Handkerchief**
 {{{
@@ -73,7 +75,8 @@ a  = atan2(X,Y);
 
 Vx = W * r * sin(a+r);
 Vy = W * r * cos(a-r);
-}}}----
+}}}
+----
 
 **(7) Heart**
 {{{
@@ -82,7 +85,8 @@ r  = W * sqrt(X^2 + Y^2);
 
 Vx = r * sin(a);
 Vy = (-r) * cos(a);
-}}}----
+}}}
+----
 
 **(8) Disc**
 {{{
@@ -91,7 +95,8 @@ r  = PI * sqrt(X^2 + Y^2);
 
 Vx = W * sin(r) * a;
 Vy = W * cos(r) * a;
-}}}----
+}}}
+----
 
 **(9) Spiral**
 {{{
@@ -101,7 +106,8 @@ r1 = W / r;
 
 Vx = r1 * (cos(a) + sin(r));
 Vy = r1 * (sin(a) - cos(r));
-}}}----
+}}}
+----
 
 **(10) Hyperbolic**
 {{{
@@ -110,7 +116,8 @@ a  = atan2(X,Y);
 
 Vx = W * sin(a) / r;
 Vy = W * cos(a) * r;
-}}}----
+}}}
+----
 
 **(11) Diamond**
 {{{
@@ -119,7 +126,8 @@ a  = atan2(X,Y);
 
 Vx = W * sin(a) * cos(r);
 Vy = W * cos(a) * sin(r);
-}}}----
+}}}
+----
 
 **(12) Ex**
 {{{
@@ -132,7 +140,8 @@ m1 = r * n1^3;
 
 Vx = W * (m0 + m1);
 Vy = W * (m0 - m1);
-}}}----
+}}}
+----
 
 **(13) Julia**
 {{{
@@ -143,7 +152,8 @@ r  = W * (X^2 + Y^2)^0.25;
 
 Vx = r * cos(a);
 Vy = r * sin(a);
-}}}----
+}}}
+----
 
 **(14) Bent**
 {{{
@@ -152,7 +162,8 @@ if (Y < 0)   Y /= 2.0;
 
 Vx = W * x;
 Vy = W * y;
-}}}----
+}}}
+----
 
 **(15) Waves**
 {{{
@@ -161,7 +172,8 @@ ny = Y + c(1,1) * sin(X / (c(2,1)^2 + EPS));
 
 Vx = W * nx;
 Vy = W * ny;
-}}}----
+}}}
+----
 
 **(16) Fisheye**
 {{{
@@ -170,7 +182,8 @@ K = 2 * W / (r+1);
 
 Vx = K * y;
 Vy = K * x;
-}}}----
+}}}
+----
 
 **(17) Popcorn**
 {{{
@@ -181,7 +194,8 @@ ny = Y + c(2,1) * sin(dy);
 
 Vx = W * nx;
 Vy = W * ny;
-}}}----
+}}}
+----
 
 **(18) Exponential**
 {{{
@@ -190,7 +204,8 @@ dy = PI * Y;
 
 Vx = dx * cos(dy);
 Vy = dx * sin(dy);
-}}}----
+}}}
+----
 
 **(19) Power**
 {{{
@@ -199,7 +214,8 @@ r  = W * (sqrt(X^2 + Y^2))^sin(a);
 
 Vx = r * cos(a);
 Vy = r * sin(a);
-}}}----
+}}}
+----
 
 **(20) Cosine**
 {{{
@@ -208,7 +224,8 @@ ny = -sin(X*PI) * sinh(Y);
 
 Vx = W * nx;
 Vy = W * ny;
-}}}----
+}}}
+----
 
 **(21) Rings**
 {{{
@@ -219,7 +236,8 @@ rp = W * (fmod(r+dx,2*dx) - dx + r*(1-dx));
 
 Vx = rp * cos(a);
 Vy = rp * sin(a);
-}}}----
+}}}
+----
 
 **(22) Fan**
 {{{
@@ -232,7 +250,8 @@ a += (fmod(a+dy,dx) > dx2) ? -dx2 : dx2;
 
 Vx = r * cos(a);
 Vy = r * sin(a);
-}}}----
+}}}
+----
 
 **(23) Eyefish**
 {{{
@@ -240,7 +259,8 @@ r  = (2 * W) / (sqrt(X^2 + Y^2) + 1);
 
 Vx = r * X;
 Vy = r * Y;
-}}}----
+}}}
+----
 
 **(24) Bubble**
 {{{
@@ -248,20 +268,23 @@ r  = W / ( (X^2 + Y^2)/4 + 1);
 
 Vx = r * X;
 Vy = r * Y;
-}}}----
+}}}
+----
 
 **(25) Cylinder**
 {{{
 Vx = r * sin(X);
 Vy = r * Y;
-}}}----
+}}}
+----
 
 **(26) Noise**
 {{{
 r  = W * random;
 Vx =  X * r * cos(random * 2 * PI);
 Vy = Y * r * sin(random * 2 * PI);
-}}}----
+}}}
+----
 
 **(27) Blur**
 
@@ -269,7 +292,8 @@ Vy = Y * r * sin(random * 2 * PI);
 r  = W * random;
 Vx = r * cos(random * 2 * PI);
 Vy = r * sin(random * 2 * PI);
-}}}----
+}}}
+----
 
 **(28) Rings2** (parameter: rings2_val)
 {{{
@@ -280,7 +304,8 @@ r += -2*dx*(int)((r+dx)/(2*dx)) + r*(1-dx);
 
 Vx = W * sin(a) * r;
 Vy = W * cos(a) * r;
-}}}----
+}}}
+----
 
 **(29) Fan2** (parameters: fan2_x, fan2_y)
 {{{
@@ -296,7 +321,8 @@ else
 
 Vx = r * sin(a);
 Vy = r * cos(a);
-}}}----
+}}}
+----
 
 **(30) Blob** (parameters: blob_high, blob_low, blob_waves)
 {{{
@@ -308,7 +334,8 @@ r = r * (blob_low + bdiff * (1/2 + sin(blob_waves * a)/2));
 
 Vx = W * sin(a) * r;
 Vy = W * cos(a) * r;
-}}}----
+}}}
+----
 
 **(31) PDJ** (parameters: pdj_a, pdj_b, pdj_c, pdj_d)
 {{{
@@ -319,7 +346,8 @@ ny2 = cos(pdj_d * Y);
 
 Vx  = W * (ny1 - nx1);
 Vy  = W * (nx2 - ny2);
-}}}----
+}}}
+----
 
 **(32) Perspective** (parameters: perspective_angle, perspective_dist)
 {{{
@@ -328,7 +356,8 @@ vfcos = W * perspective_dist * cos(perspective_angle * PI / 2);
 t  = (perspective_dist - X * vsin);
 Vx = vf * X / t;
 Vy = vfcos * Y / t;
-}}}----
+}}}
+----
 
 **(33) JuliaN** (parameters: julian_power, julian_dist)
 {{{
@@ -342,7 +371,8 @@ r = W * Power(X * X + Y * Y, cn);
 
 Vx = r * cosa;
 Vy = r * sina;
-}}}----
+}}}
+----
 
 **(34) JuliaScope** (parameters: juliascope_power, juliascope_dist)
 {{{
@@ -362,7 +392,8 @@ if ((rnd and 1) = 0) {
 r = W * Power (X * X + Y * Y, cN);
 Vx = r * cosa;
 Vy = r * sina;
-}}}----
+}}}
+----
 
 **(35) Blur**
 {{{
@@ -374,7 +405,8 @@ r = W * random;
 
 Vx = r * cosr;
 Vy = r * sinr;
-}}}----
+}}}
+----
 
 **(36) Gaussian**
 {{{
@@ -386,7 +418,8 @@ r = W * (random + random + random + random - 2.0);
 
 Vx = r * cosr;
 Vy = r * sinr;
-}}}----
+}}}
+----
 
 **(37) RadialBlur** (parameter: radialBlur_angle)
 {{{
@@ -402,7 +435,8 @@ rz = zoomvar * rndG - 1;
 
 Vx = ra * ca + X*rz;
 Vy = ra * sa + Y*rz;
-}}}----
+}}}
+----
 
 **(38) Pie** (parameters: pie_slices, pie_rotation, pie_thickness)
 {{{
@@ -412,7 +446,8 @@ r = W * random;
 
 Vx = r * cos(a);
 Vy = r * sin(a);
-}}}----
+}}}
+----
 
 **(39) Ngon** (parameters: ngon_power, ngon_sides, ngon_corners, ngon_circle)
 {{{
@@ -429,7 +464,8 @@ amp = amp / (r_factor + EPS);
 
 Vx = W * X * amp;
 Vy = W * Y * amp;
-}}}----
+}}}
+----
 
 **(40) Curl** (parameters: curl_c1, curl_c2)
 {{{
@@ -440,7 +476,8 @@ r = W / (re^2 + im^2);
 
 Vx = ((X * re) + (Y * im)) * r;
 Vy = ((Y * re) - (X * im)) * r;
-}}}----
+}}}
+----
 
 **(41) Rectangles** (parameters: rectangles_x, rectangles_y)
 {{{
@@ -454,7 +491,8 @@ if rectangles_y==0
 else
    Vy = W * ((2 * floor(Y / rectangles_y) + 1) * rectangles_y - Y);
 
-}}}----
+}}}
+----
 
 **(42) Arch**
 {{{
@@ -462,19 +500,22 @@ ang = random * W * PI;
 
 Vx = W * sin(ang);
 Vy = W * sin(ang)*sin(ang)/cos(ang);
-}}}----
+}}}
+----
 
 **(43) Tangent**
 {{{
 Vx = W * sin(X)/cos(Y);
 Vy = W * sin(Y)/cos(Y);
-}}}----
+}}}
+----
 
 **(44) Square**
 {{{
 Vx = W * (random - 0.5);
 Vy = W * (random - 0.5);
-}}}----
+}}}
+----
 
 **(45) Rays**
 {{{
@@ -484,7 +525,8 @@ tanr = W * tan(ang) * r;
 
 Vx = tanr * cos(X);
 Vy = tanr * sin(Y);
-}}}----
+}}}
+----
 
 **(46) Blade**
 {{{
@@ -492,7 +534,8 @@ r = W * random * sqrt(X^2 + Y^2);
 
 Vx = W * X * ( cos(r) + sin(r) );
 Vy = W * X * ( cos(r) - sin(r) );
-}}}----
+}}}
+----
 
 **(47) Secant2**
 {{{
@@ -503,7 +546,8 @@ if (cos(r)<0)
    Vy = W * (1.0/cos(r) + 1);
 else
    Vy = W * (1.0/cos(r) - 1);
-}}}----
+}}}
+----
 
 **(48) Twintrian**
 {{{
@@ -514,7 +558,8 @@ diff = log10(sinr*sinr) + cosr;
 
 Vx = W * X * diff;
 Vy = W * X * (diff - sinr*PI);
-}}}----
+}}}
+----
 
 **(49) Cross**
 {{{
@@ -523,7 +568,8 @@ r = W * sqrt(1.0 / (s^2+EPS));
 
 Vx = X * r;
 Vy = Y * r;
-}}}----
+}}}
+----
 
 **(50) Disc2** (parameters: disc2_rot, disc2_twist)
 {{{
@@ -550,7 +596,8 @@ r = W * arctan2(X,Y) / PI;
 
 Vx = (sinr + disc2_cosadd) * r;
 Vy = (cosr + disc2_sinadd) * r;
-}}}----
+}}}
+----
 
 **(51) Super_Shape** (parameters: supershape_m, supershape_n1, supershape_n2, supershape_n3, supershape_holes, supershape_rnd)
 {{{
@@ -582,7 +629,8 @@ r = W * (random - flower_holes) * cos(flower_petals * theta);
 
 Vx = r * cos(theta);
 Vy = r * sin(theta);
-}}}----
+}}}
+----
 
 **(53) Conic** (parameters: conic_holes, conic_eccen)
 {{{
@@ -591,7 +639,8 @@ r = W * (random - conic_holes) * conic_eccen / (1 + conic_eccen * cos(theta));
 
 Vx = r * cos(theta);
 Vy = r * sin(theta);
-}}}----
+}}}
+----
 
 **(54) Parabola** (parameters: parabola_height, parabola_width)
 {{{
@@ -599,7 +648,8 @@ r = sqrt(X^2 + Y^2);
 
 Vx = W * parabola_height * sin(r) * sin(r) * random;
 Vy = W * parabola_width * cos(r) * random;
-}}}----
+}}}
+----
 Flam3 2.8 Variations
 ----
 
