@@ -77,7 +77,12 @@ The color element has two attributes: index and rgb. The index value is an integ
 For example:
 
 {{{
-<flame ...> <color index="0" rgb="20 12 123"/> <color index="1" rgb="21 13 130"/> ... <color index="255" rgb="200 42 0"/> <xform .../> ... <flame/>
+<flame ...>
+  <color index="0" rgb="20 12 123"/>
+  <color index="1" rgb="21 13 130"/>
+  ...
+  <color index="255" rgb="200 42 0"/> 
+<flame/>
 }}}
 
 Flames can also have edit histories that record their family lineage and any other changes to the genome, like this:
