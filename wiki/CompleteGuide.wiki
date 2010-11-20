@@ -35,7 +35,8 @@ When you have a still image that you are happy with, you are ready for **Step 4*
 env cross0=flame1.flame cross1=flame2.flame repeat=20 flam3-genome > newfile.flame
 }}}
 Instead of flame1.flame and flame2.flame, put in the names of the .flame files for the two sheep you want to cross. The results of the cross will be saved in the file newfile.flame, or whatever name you specify. This will generate 20 new sheep, you can change the number to get however many you want. To do this in Windows without Cygwin, you should be able to use [http://www.tiedyedfreaks.org/ace/doscross.bat this file]. Open it in a text editor and change the names of the sheep (A.flame is one parent. B.flame is the other parent, AB_cross.flame is the new file with children).
- * If you wish to render sheep using flam3, you can use the line:{{{
+ * If you wish to render sheep using flam3, you can use the line:
+{{{
 env in=newfile.flame prefix="newfile" flam3-render
 }}}
 This will generate images named newfile0000.jpg, newfile0001.jpg, etc. You can tell which sheep is which in your newfile.flame by looking at the time= tags.
