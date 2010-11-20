@@ -1,0 +1,28 @@
+Here are examples of what you can do with temporal_filter_type and temporal_filter_exponent.
+
+For some time, flame animations have been rendered by slowly changing xforms and parameters and iterating for a fraction of the total //quality// at each time step. The iterations are uniformly distributed across all of the //temporal_samples// specified in the {{{<flame>}}} tag. This results in images that look like the following sample (sheep 118163, flock 202, frame 10 of 80):
+
+[[http://electricsheep.wikispaces.com/space/showimage/mb_std.flame|mb_std.flame]]
+[[image:00010-std.png]]
+
+One alternative to the uniform distribution of points is to set the //temporal_filter_type// attribute to "gaussian". The iterations will appear clustered near the middle of the motion rather than uniformly spanning all of the temporal samples.
+
+//temporal_filter_type//="gaussian":
+[[http://electricsheep.wikispaces.com/space/showimage/mb_gauss1.flame|mb_gauss1.flame]]
+[[image:00010_g1.png]]
+
+We also now can expand the motion blur past -0.5/+0.5 time steps using the //temporal_filter_width// attribute.
+
+//temporal_filter_type//="gaussian" //temporal_filter_width//="2":
+[[http://electricsheep.wikispaces.com/space/showimage/mb_gauss2.flame|mb_gauss2.flame]]
+[[image:00010_g2.png]]
+
+To get directional motion rather than blurred motion, set //temporal_filter_type// to "exp", and use the //temporal_filter_exponent// attribute to control the speed and direction of the motion. //temporal_filter_exponent// defaults to 0.0, which is omnidirectional (for backwards compatibility). If //temporal_filter_exponent// is > 0, then later time steps are emphasized, and if < 0, earlier time steps are emphasized. Using the same flame:
+
+//temporal_filter_type//="exp" //temporal_filter_exponent//="2.0":
+[[http://electricsheep.wikispaces.com/space/showimage/mb_logp2.flame|mb_logp2.flame]]
+[[image:00010_lp2.png]]
+
+//temporal_filter_type//="exp" //temporal_filter_exponent//="-2.0":
+[[http://electricsheep.wikispaces.com/space/showimage/mb_logn2.flame|mb_logn2.flame]]
+[[image:00010_ln2.png]]
