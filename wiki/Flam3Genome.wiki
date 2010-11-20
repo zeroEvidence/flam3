@@ -105,5 +105,5 @@ See above for how to set them.
 || id || (empty) || ID to use in {{{<edit>}}} tags / img comments ||
 || comment || (empty) || comment string for {{{<edit>}}} tags ||
 || noedits || unset || omit edit tags from output ||
-|| print_edit_depth || 0 || depth to truncate <edit> tag structure. 0 prints all {{{<edit>}}} tags ||
+|| print_edit_depth || 0 || depth to truncate {{{<edit>}}} tag structure. 0 prints all {{{<edit>}}} tags ||
 || intpalette || unset || round palette entries for importing into older Apophysis versions ||
