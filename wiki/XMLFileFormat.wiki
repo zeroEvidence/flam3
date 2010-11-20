@@ -88,5 +88,17 @@ For example:
 Flames can also have edit histories that record their family lineage and any other changes to the genome, like this:
 
 {{{
-<edit date="Fri Jul 18 19:21:37 EDT 2008" id="888" action="clone brood"> <edit date="Tue Jul 15 04:12:39 EDT 2008" id="766" action="cross alternate 1: 0 0 1 1 cmap_cross 0: 34 137 156 174 improved colors" filename="upload" index="0"> <edit date="Tue Jul 1 11:07:02 EDT 2008" nick="m2" url="www.myspace.com/mthatsalowercasem2" id="304" action="clone upload" filename="spex" index="0"> <edit filename="upload" index="0"/> </edit> <edit date="Wed Jun 25 00:21:20 EDT 2008" id="104" action="clone brood" filename="spex" index="0"> <edit date="Tue Jun 24 02:42:36 EDT 2008" id="82" action="cross alternate 1: 1 0 0 1 cmap_cross 0: 7 74 179 221" filename="upload" index="0"> <edit date="Sun Mar 26 15:48:04 PST 2006" action="genebank 198 20903" filename="genebank.flam3" index="579"/> <edit date="Sun Mar 26 15:46:19 PST 2006" action="genebank 191 16594" filename="genebank.flam3" index="181"/> </edit> </edit> </edit> </edit>
+<edit date="Fri Jul 18 19:21:37 EDT 2008" id="888" action="clone brood">
+  <edit date="Tue Jul 15 04:12:39 EDT 2008" id="766" action="cross alternate 1: 0 0 1 1 cmap_cross 0: 34 137 156 174 improved colors" filename="upload" index="0">
+    <edit date="Tue Jul 1 11:07:02 EDT 2008" nick="m2" url="www.myspace.com/mthatsalowercasem2" id="304" action="clone upload" filename="spex" index="0">
+      <edit filename="upload" index="0"/>
+    </edit>
+    <edit date="Wed Jun 25 00:21:20 EDT 2008" id="104" action="clone brood" filename="spex" index="0">
+      <edit date="Tue Jun 24 02:42:36 EDT 2008" id="82" action="cross alternate 1: 1 0 0 1 cmap_cross 0: 7 74 179 221" filename="upload" index="0">
+      <edit date="Sun Mar 26 15:48:04 PST 2006" action="genebank 198 20903" filename="genebank.flam3" index="579"/>
+      <edit date="Sun Mar 26 15:46:19 PST 2006" action="genebank 191 16594" filename="genebank.flam3" index="181"/> 
+    </edit>
+  </edit>
+</edit>
+</edit>
 }}}
