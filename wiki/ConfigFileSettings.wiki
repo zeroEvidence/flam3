@@ -7,5 +7,3 @@ The Mac and Windows clients have a config file that saves the settings from the 
   * *NormalInterval* How often in seconds to resort the sheep according to playcount (see MedianLevel above). The default is 600, which means 10 minutes.
   * *DelayAfterRenderSeconds* How long to delay after completing rendering a frame before starting a new render. The default is 1 second.
   * *RandomMedianLevel* true/false The effective MedianLevel (see above) is picked randomly between 100 and the regular value (as set by MedianLevel and AutoMedianLevel). It picks a new value once per NormalInterval.
-
-We haven't decided the defaults for these. Please experiment and let us know what you think. For example try setting AutoMedianLevel to true, PlayCountDecayZ to 50, NormalInterval to 60, and RandomMedianLevel to true. Or some subset of these.
