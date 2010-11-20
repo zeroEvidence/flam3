@@ -9,4 +9,6 @@ Below are examples of one of the sample images that ships with the flam3 code wi
 
 http://lh3.ggpht.com/_sf5_-QiEqNk/TOhD7KIeFYI/AAAAAAAAJok/dpcop05-aQQ/s912/filter-grid.jpg
 
-(note this image has been jpg compressed which interferes with some of the fine distinctions between these kernels)
+(note these images have been jpg compressed which interferes with some of the fine distinctions between these kernels)
+
+http://lh3.ggpht.com/_sf5_-QiEqNk/TOhEuIAu7aI/AAAAAAAAJow/X92JVzfsRmk/s912/filter-grid2.jpg
