@@ -1,10 +1,10 @@
 =Electric Sheep Frequently Asked Questions= 
 
 ===Top Questions=== 
-* [FAQ#Getting_Sheep Why don't I see any sheep, or just one or two sheep?]
-* [[FAQ#Credit_Vanishes_or_Missing I don't see my name on the credit page, am I rendering?]]
-* [[Security|Do the Sheep put my computer at risk to viruses?]]
-* [[BitTorrent|Why not use BitTorrent?]]
+ * [FAQ#Getting_Sheep Why don't I see any sheep, or just one or two sheep?]
+ * [FAQ#Credit_Vanishes_or_Missing I don't see my name on the credit page, am I rendering?]
+ * [FAQ#Security_and_Viruses Do the Sheep put my computer at risk to viruses?]
+ * [[FAQ#BitTorrent Why not use BitTorrent?]]
 
 ==Getting Sheep==
 
