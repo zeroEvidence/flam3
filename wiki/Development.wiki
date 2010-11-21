@@ -51,7 +51,7 @@ Checkout ffmpeg svn to C:\msys\home\?your?login?\ffmpeg\svn
 Download gnu binutils (2.20.1) and unpack+overwrite to C:\msys\mingw
 Overwrite files using gcc bin, mingwrt dev and mingwrt dll package in c:\msys\mingw folder
 Depending on current gcc version you will also need dlls for mpc, mpfr and gmp packages (4.5.0).
-}}}
+
 Run msys environment and go to ffmpeg folder:
 cd ffmpeg
 
