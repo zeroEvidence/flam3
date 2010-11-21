@@ -75,11 +75,10 @@ Using installer from C:\esmsvc\InstallerMSVC will build installer package, after
 }}}
 
 ==Building on Linux== 
-
+ * Development has moved over to client_generic
  * The current client is part of debian and ubuntu: http://packages.debian.org/sid/electricsheep http://packages.ubuntu.com/lucid/electricsheep so you can use the source from their package systems.
  * Or use http://electricsheep.org/makesheep.sh to build from our SVN.
- * See [[http://community.electricsheep.org/node/271|forum]]
- * Generic client(svn->'client_generic') on linux: used to work but has not been maintained.
+ * See [http://community.electricsheep.org/node/271 forum]
 
 ==Building on MacOS X== 
  * Open client_generic/MacBuild/ElectricSheep.xcodeproj into Xcode 3.1.X (you need at least 10.5 for running it)
