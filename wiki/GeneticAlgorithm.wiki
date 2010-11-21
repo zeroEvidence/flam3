@@ -12,7 +12,7 @@ When using flam3-genome, there are new env vars that allow the history of how a 
 'url' : The address for your website, gallery, blog, etc.
 'comment' : A comment string describing your methodology.
 
-These env vars are optional, but will personalize an <edit> element within the genome with your information should you provide it. The structure will look something like this in the genome:
+These env vars are optional, but will personalize an {{{<edit>}}} element within the genome with your information should you provide it. The structure will look something like this in the genome:
 
 {{{
 <edit date="28 Nov 2005 17:07" nick="Erik" action="cross interpolate 0.168697 1">
