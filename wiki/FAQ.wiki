@@ -35,9 +35,9 @@ If Electric Sheep crashes instantly when run, try turning on "Direct Draw" in th
 The [http://v2d7c.sheepserver.net/cgi/status.cgi?&detail=credit credits page] only tallies the contributions to the current flock. Your credit dies with the sheep. If it's downloading your client is probably rendering fine.
 
 There's also a bug in how the server tallies renders where only 1 in 4 frames is counted. That's a lot, but it is fair, so it should not affect the ranking.
-
+<p><br>
 ----
-
+<p><br>
 ==Security and Viruses==
 
 ===Do the Sheep put my computer at risk to viruses?=== 
@@ -49,9 +49,9 @@ Anytime you download and run software from the internet there's a risk.
 ===Does it share or use any information from my computer?===
 
 No it does not violate your privacy in any way.  The only data sent to the server are your votes (if you choose to). And the rendered frames, which are made according to instructions received on the server, and are the same no matter who would have done them.
-
+<p><br>
 ----
-
+<p><br>
 ==BitTorrent==
 
 ===Why not use BitTorrent to download the sheep?===
