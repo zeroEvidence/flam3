@@ -42,7 +42,7 @@ There's also a bug in how the server tallies renders where only 1 in 4 frames is
 
 ===Do the Sheep put my computer at risk to viruses?=== 
 
-Nobody's had any problems, and the Linux version was audited by a security company, so I think it's safe. It doesn't intentionally violate your privacy at all. However, I cannot guarantee that a criminal hasn't broken into my web site and infected the installer. The Electric Sheep is listed on [[http://www.nonags.com/|nonags.com]], which screens its content for spam and virus risks.
+Nobody's had any problems, and the Linux version was audited by a security company, so I think it's safe. It doesn't intentionally violate your privacy at all. However, I cannot guarantee that a criminal hasn't broken into my web site and infected the installer. The Electric Sheep is listed on [http://www.nonags.com/ nonags.com], which screens its content for spam and virus risks.
 
 Anytime you download and run software from the internet there's a risk.
 
@@ -56,6 +56,6 @@ No it does not violate your privacy in any way.  The only data sent to the serve
 
 ===Why not use BitTorrent to download the sheep?===
 
-We tried that already and only 10-15% of our users were able to seed, which wasn't enough to make it work. Instead we are focusing on the HTTP which is much more reliable, and adding a subscription system to pay for our bandwidth. Our goal is to keep it free for everyone, and at the same time make it sustainable ie pay our own bills. This is the "[[http://en.wikipedia.org/wiki/Freemium|freemium]] " model.
+We tried that already and only 10-15% of our users were able to seed, which wasn't enough to make it work. Instead we are focusing on the HTTP which is much more reliable, and adding a subscription system to pay for our bandwidth. Our goal is to keep it free for everyone, and at the same time make it sustainable ie pay our own bills. This is the [http://en.wikipedia.org/wiki/Freemium freemium] model.
 
 See http://community.electricsheep.org/node/787
