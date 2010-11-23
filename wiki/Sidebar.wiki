@@ -3,7 +3,14 @@
   * [Flam3Genome] flam3-genome
   * [Flam3Render] flam3-render
   * [Flam3Animate] flam3-animate
- * [Accessories]
+ * [XMLFileFormat XML File Format]
+ * [Variations Catalog of Variations]
+ * Features and Examples
+  * [MotionBlur]
+  * [AdvancedMotionBlur Advanced MotionBlur]
+  * [DensityEstimation Density Estimation]
+  * [NewFeatures Features New in 3.0]
+ * [Accessories Accessories to the Sheep Software]
  * Designing and Submitting Electric Sheep
   * [SheepDesignTips Sheep Design Tips]
   * [GoodSheep How to Make a Good Sheep]
