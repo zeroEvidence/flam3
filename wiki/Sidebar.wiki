@@ -1,5 +1,7 @@
  * [Introduction]
  * [Accessories]
- * [SheepDesignTips Sheep Design Tips]
- * [GoodSheep How to Make a Good Sheep]
- * [SubmissionTroubleshooting Troubleshooting submissions]
+ * Designing and Submitting Electric Sheep
+  * [SheepDesignTips Sheep Design Tips]
+  * [GoodSheep How to Make a Good Sheep]
+  * [SubmissionTroubleshooting Troubleshooting submissions]
+  * [CompleteGuide Step by Step Guide to Sheep Design]
