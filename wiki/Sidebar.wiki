@@ -1,14 +1,22 @@
  * [Introduction]
  * [CommandLineOverview Command Line Tools]
-  * [Flam3Genome] flam3-genome
-  * [Flam3Render] flam3-render
-  * [Flam3Animate] flam3-animate
+  * [Flam3Genome flam3-genome]
+  * [Flam3Render flam3-render]
+  * [Flam3Animate flam3-animate]
  * [XMLFileFormat XML File Format]
  * [Variations Catalog of Variations]
+ * [GeneticAlgorithm]
+ * Animation
+  * [AnimatingFlames]
+  * [Interpolation]
+  * [MotionElements]
  * Features and Examples
   * [MotionBlur]
   * [AdvancedMotionBlur Advanced MotionBlur]
   * [DensityEstimation Density Estimation]
+  * [GammaThreshold]
+  * [SpatialFilterExamples]
+  * [HighlightPower]
   * [NewFeatures Features New in 3.0]
  * [Accessories Accessories to the Sheep Software]
  * Designing and Submitting Electric Sheep
