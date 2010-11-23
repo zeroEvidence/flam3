@@ -1,4 +1,8 @@
  * [Introduction]
+ * [CommandLineOverview Command Line Tools]
+  * [Flam3Genome] flam3-genome
+  * [Flam3Render] flam3-render
+  * [Flam3Animate] flam3-animate
  * [Accessories]
  * Designing and Submitting Electric Sheep
   * [SheepDesignTips Sheep Design Tips]
