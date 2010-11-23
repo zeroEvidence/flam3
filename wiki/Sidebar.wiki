@@ -18,7 +18,6 @@
   * [SpatialFilterExamples]
   * [HighlightPower]
   * [NewFeatures Features New in 3.0]
- * [Accessories Accessories to the Sheep Software]
  * Designing and Submitting Electric Sheep
   * [SheepDesignTips Sheep Design Tips]
   * [GoodSheep How to Make a Good Sheep]
