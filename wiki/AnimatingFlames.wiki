@@ -19,7 +19,7 @@ If present, the prefix will be attached to every rendered image's filename (ABC0
 ===Creating a movie=== 
 Once you have created a whole bunch of still frame files, you need to use a video tool to combine them all into a video file (i.e. MPEG, avi, Windows Media file or Quicktime). Adobe Premiere will do this (Import Files) or use a free Windows program VirtualDub http://www.virtualdub.org/
 
-For example, to use the freely available, open source [http://www.mplayerhq.hu MPlayer] mencoder (available for [http://armory.nicewarrior.org/projects/cygmp/ windows], [http://mplayerosx.sourceforge.net/ mac], and [http://www.mplayerhq.hu/design7/dload.html linux]) you can use the following command line to generate the movie in .avi format:
+For example, to use the freely available, open source [http://www.mplayerhq.hu MPlayer] mencoder (available for [http://mplayerosx.sourceforge.net/ mac], and [http://www.mplayerhq.hu/design7/dload.html linux]) you can use the following command line to generate the movie in .avi format:
 {{{
 mencoder mf:///home/username/path/to/images/*.jpg -mf fps=30 -ovc lavc -o output.avi
 }}}
