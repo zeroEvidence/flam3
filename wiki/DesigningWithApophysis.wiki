@@ -1,9 +1,9 @@
-There is already a very good [[apophysis:home|Apophysis Wiki]]. This page is specifically about the peculiarities of creating designs in Apophysis for the purpose of uploading them as future Electric Sheep.
+There is already a very good [http://apophysis.wikispaces.com/ Apophysis Wiki]. This page is specifically about the peculiarities of creating designs in Apophysis for the purpose of uploading them as future Electric Sheep.
 
- * There are several [[apophysis:Tutorials|tutorials for Apophysis]] out there.
+ * There are several [http://apophysis.wikispaces.com/Tutorials tutorials] out there.
  * If you are using the Apophysis beta, **be sure you have Save in old file format checked under Options->Options->General tab.**
- * You may use [[http://exper.3drecursions.com/exper-apophysis-scripts/|Exper's export sheep script]] to be sure your sheep is formatted properly for the server. Be sure to choose the one that matches the server you're using: 2.6 or 2.7beta.
- * You cannot use all of the features in Apophysis to build sheep. The rules are generally outlined in the [[http://electricsheep.org/apophysis/posting.html|Posting help file]], but some of the most important ones are:
+ * You may use [http://exper.3drecursions.com/exper-apophysis-scripts/ Exper's export sheep script] to be sure your sheep is formatted properly for the server. Be sure to choose the one that matches the server you're using: 2.6 or 2.7beta.
+ * You cannot use all of the features in Apophysis to build sheep. The rules are generally outlined in the [http://electricsheep.org/apophysis/posting.html Posting help file], but some of the most important ones are:
   * Do not use zoom to zoom. Use Master Scale - under View->Adjust->Rendering tab.
   * The sheep will be rendered at 800x592 on the 2.7 server. If you are viewing the sheep at a very different size, the server's rendering might be surprising to you.
   * Sheep will render with a maximum of 12 triangles on the 2.6 server.
