@@ -1,7 +1,7 @@
 ==Using flam3-animate== 
 
 flam3-animate treats the flames in its input as a time-varying animation.
-For each frame of output, it [[Interpolation|interpolates]] the inputs to the requested time,
+For each frame of output, it [Interpolation interpolates] the inputs to the requested time,
 and then renders the result with motion blur.
 
 ===Parameters=== 
