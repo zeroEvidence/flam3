@@ -4,7 +4,7 @@ While many folks are content to create new flames from scratch, it is not only p
 
 ----
 
-**Informational Env Vars**
+*Informational Env Vars*
 
 When using flam3-genome, there are new env vars that allow the history of how a particular genome was created to be tracked. These env vars are as follows:
 
@@ -47,7 +47,7 @@ env mutate=seeds.flame repeat=20 nick="Erik" flam3-genome > seeds_mutated.flame
 
 ----
 
-**Cross Mode**
+*Cross Mode*
 In 'cross' mode, elements from one parent file are genetically crossed with elements from a second parent file to create a new flame. There are three methods used to create children from parents:
 
  * 'alternate' (80% if random) : Xforms are alternately copied from each parent into the new flame.
@@ -70,13 +70,13 @@ Additionally, the symmetry of the randomly generated genomes in the 'mutate' met
 
 The remaining methods available to flam3-genome are for the purposes of animation:
 
-**Sequence Mode**
+*Sequence Mode*
 
-A discussion on how to use 'sequence' to generate animation time steps can be found at [[Animating Flames]].
+A discussion on how to use 'sequence' to generate animation time steps can be found at AnimatingFlames.
 
 **Rotate / Interp Mode**
 
-The 'rotate' and 'interp' modes of operation for flam3-genome are used to generate genome files that can be used to generate single frames of animation. The 'rotate' env var takes a genome file argument; the first genome in this file will be used to generate the animation genome as follows (using the template file from the [[Animating Flames]] example):
+The 'rotate' and 'interp' modes of operation for flam3-genome are used to generate genome files that can be used to generate single frames of animation. The 'rotate' env var takes a genome file argument; the first genome in this file will be used to generate the animation genome as follows (using the template file from the AnimatingFlames example):
 
 {{{
 env rotate=A.flame template=anim_template.flame nframes=100 frame=5 flam3-genome > A_005.flame
