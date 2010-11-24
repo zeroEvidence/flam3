@@ -6,7 +6,7 @@ and then renders the result with motion blur.
 
 ===Parameters=== 
 
-Setting the parameters is explained [[Using the Command-Line Utilities|here]] .
+Setting the parameters is explained [CommandLineOverview above].
 
 || *name* || *default* || *meaning* ||
 || prefix || (empty) || prefix names of output files with this string. ||
