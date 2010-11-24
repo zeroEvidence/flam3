@@ -23,3 +23,4 @@
   * [GoodSheep How to Make a Good Sheep]
   * [SubmissionTroubleshooting Troubleshooting submissions]
   * [CompleteGuide Step by Step Guide to Sheep Design]
+  * DesigningWithApophysis
