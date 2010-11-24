@@ -3,7 +3,7 @@ You can use flam3-genome to clone, mutate, and cross flame genomes, and
 it can also be used to generate animation sequences and apply templates
 to existing flames. Flam3-genome creates and manipulates genomes (parameter sets).
 
-For more info on how to use flam3-genome, see [[Genetic Engineering with flam3-genome|Genetic Engineering]]
+For more info on how to use flam3-genome, see GeneticAlgorithm
 
 the flam3-genome program creates random parameter files. it also mutates,
 rotates, and interpolates existing parameter files. for example to
