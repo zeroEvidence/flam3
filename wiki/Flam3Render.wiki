@@ -9,7 +9,7 @@ used options near the top of the list.
 
 ==Parameters== 
 
-Setting the parameters is explained [[Using the Command-Line Utilities|here]] .
+Setting the parameters is explained here: CommandLineOverview.
 
 || *name* || *default* || *meaning* ||
 || in || stdin || name of input file ||
