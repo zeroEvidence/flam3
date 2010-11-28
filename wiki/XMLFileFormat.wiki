@@ -54,7 +54,7 @@ The attributes of the xform element are:
 
 || **weight** || non-negative float || The relative probability that this function will be chosen by the chaos game. ||
 || **color** || float || The color index associated with this function, normally in [0,1]. ||
-|| **symmetry** || float || Nonzero means this xform animates, also controls color influence. ||
+|| **symmetry** || float || <= 0 means this xform animates, also controls color influence. ||
 || **coefs** || 6 floats || The coefficients for the affine part of the function, in row order (a d b e c f). ||
 || **post** || 6 floats || The coefficients for the affine part of the post function, in row order (a d b e c f). ||
 || **var** || up to 14 floats || Deprecated: The variational coefficients //vi j// for this function //i//. Any coefficients not given are assumed to be zero. ||
