@@ -5,7 +5,7 @@
   * [Flam3Animate flam3-animate]
  * [XMLFileFormat XML File Format]
  * [Variations Catalog of Variations]
- * [GeneticAlgorithm]
+ * [GeneticAlgorithm Genetic Algorithm]
  * Animation
   * [AnimatingFlames]
   * [Interpolation]
