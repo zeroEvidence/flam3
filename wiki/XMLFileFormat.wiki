@@ -30,7 +30,7 @@ The attributes of the flame element are:
 || **temporal_filter_width** || float || length of motion blur in units of frames ||
 || **temporal_filter_exp** || float || exponent controlling direction and rate of motion blur for "exp" mode temporal filter type. ||
 |||||| //**Color Attributes**// ||
-|| **background** || int int int || The color of the background as an RGB triple with each component in [0, 255]. ||
+|| **background** || float float float || The color of the background as an RGB triple with each component in {{{[0, 1]}}}. ||
 || **brightness** || positive float || Linear scale on luminance. ||
 || **gamma** || positive float || The inverse exponent. Values larger than one brighten the dark parts of the image. Usually between 2 and 4. ||
 || **vibrancy** || float || Blend between applying gamma to each channel independently (zero) for pastel and ghostly white images, and applying gamma from the alpha channel to each channel (one) for saturated colors. ||
